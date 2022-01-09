@@ -1,8 +1,6 @@
 public class CreditPaymentService {
-    public int calculate(int creditTerm) {
-       double percent = 9.99; //процентная ставка
-       int amount = 1_000_000; //сумма кредита, в рублях
-
+    public int calculate(int creditTerm, int amount, double percent) {
+       
        int creditTermOne = creditTerm; //срок кредита, в месяцах
 
        double interestRatePerMonth = percent / 100 / 12;
